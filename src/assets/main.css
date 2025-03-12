@@ -1,0 +1,33 @@
+@import './base.css';
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  width:100%;
+}
+
+
+.p-toast-summary	{
+  position: relative;
+  top: -4px;
+}
+
+.p-toast-message-content{
+  margin-left:0.75rem;
+  margin-right:1rem;
+}
+.p-toast {
+  margin:auto;
+  z-index: 1200 !important; /* Ensure it overrides other styles */
+}
+
+.p-dialog-content	{
+  flex:1;
+}
+
+
+.p-dialog-footer {
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
