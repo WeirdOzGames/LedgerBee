@@ -7,10 +7,12 @@
 
     import {logout} from "../api/rest_client";
     import { useUserStore } from '../stores/userStore';
+    import { useAppStore } from '../stores/appStore';
     import { useToast } from 'primevue/usetoast';
 
     const toast = useToast();
     const userStore = useUserStore();
+    const appStore = useAppStore();
 
     const loginFlag = inject("loginFlag");
     const registerFlag = inject("registerFlag");
@@ -22,12 +24,12 @@
 
 
     const items = [
-        {label:"Home",url:"https://github.com/WeirdOzGames/LedgerBee" },
-        {label:"About Me",url:"/about_me" },
+        {label:"Home", url:"/", command:()=>{appStore.currentMain=0}}, //using appStore.currentMain because github pages only allows single page
+        {label:"About Me", url:"/", command:()=>{appStore.currentMain=1} },
     ];
 
     const user_items = [
-        {label:"Check in Github", icon:"pi pi-github", url:"/"},
+        {label:"Check in Github", icon:"pi pi-github", url:"https://github.com/WeirdOzGames/LedgerBee", target:"_blank"},
         {label:"Settings", icon:"pi pi-cog", url:"/"},
         {separator:true},
         {label:"Logout", icon:"pi pi-sign-out", command:()=> issue_logout()}

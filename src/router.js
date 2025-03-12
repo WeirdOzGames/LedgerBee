@@ -8,7 +8,7 @@ const routes = [
         component: MainPage
     },
     {
-        path: '/about_me',
+        path: '/about',
         name: 'AboutMe',
         component: AboutMe
     },
