@@ -5,7 +5,7 @@ import {Image} from "primevue"
 <template>
     <div class="flex flex-row h-screen">
         <div class="flex flex-col m-4 p-4 h-[100%] border-r-2 border-orange-300 items-center">
-            <Image src="src/assets/Ozan.jpeg" alt="Image" width="250" imageStyle="border-radius: 75%"  preview />
+            <Image src="/Ozan.jpeg" alt="Image" width="250" imageStyle="border-radius: 75%"  preview />
             <p class="mt-4 text-xl font-semibold"> Ozan Deniz </p>
             <p class="mt-4 text-xl font-semibold"> Full-Stack Developer </p>
             <a class="mt-4 text-xl font-semibold" href="mailto:ozandeniz@mail.com">  ozandeniz@mail.com </a>
