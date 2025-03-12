@@ -22,7 +22,7 @@
 
 
     const items = [
-        {label:"Home",url:"/" },
+        {label:"Home",url:"https://github.com/WeirdOzGames/LedgerBee" },
         {label:"About Me",url:"/about_me" },
     ];
 
